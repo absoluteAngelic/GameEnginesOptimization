@@ -14,7 +14,7 @@ The base game with no optimizations done seemed to have a peak CPU-time frame of
 Total Committed Memory was 0.56GB
 <img width="924" height="258" alt="image" src="https://github.com/user-attachments/assets/ffb76145-11a3-404d-9f80-0272e4fa105e" />
 
-When taking a sample over approximately 1350 "normal" frames, the median CPU-time was 1.825ms, with a minimum of 1.335ms.
+When taking a sample over approximately 1350 "normal" frames, the median CPU-time was 1.825ms, with a minimum of 1.335ms.<br>
 <img width="272" height="82" alt="image" src="https://github.com/user-attachments/assets/e8edf512-1282-42f5-8bcd-d8f3bfe037a2" />
 
 ---
@@ -27,7 +27,7 @@ After turning the GameManager and Player into singletons, so they could be gotte
 Total Committed Memory was 0.59GB
 <img width="928" height="257" alt="image" src="https://github.com/user-attachments/assets/9fcc5499-7167-4511-8c43-ef4d0eeeb4a9" />
 
-When taking a sample over approximately 1400 frames, the median CPU-time was 1.822ms, with a minimum of 1.297ms.
+When taking a sample over approximately 1400 frames, the median CPU-time was 1.822ms, with a minimum of 1.297ms.<br>
 <img width="283" height="102" alt="image" src="https://github.com/user-attachments/assets/a2384eb5-10ad-4b38-8da7-89c12d8aee81" />
 
 ---
@@ -40,7 +40,7 @@ After putting the enemy health check to see if it should die, and GameManager ch
 Total Committed Memory was 0.57GB
 <img width="928" height="259" alt="image" src="https://github.com/user-attachments/assets/7f2e9e7a-bc56-46ad-8689-9b483c9e7b11" />
 
-When taking a sample over approximately 1300 frames, the median CPU-time was 1.871, with a minimum of 1.45ms.
+When taking a sample over approximately 1300 frames, the median CPU-time was 1.871, with a minimum of 1.45ms.<br>
 <img width="278" height="103" alt="image" src="https://github.com/user-attachments/assets/3d886b2e-dc07-4c71-ba94-7b0e6e6c86da" />
 
 ---
@@ -53,7 +53,7 @@ After implementing object pooling for the enemy spawning, the peak CPU-time fram
 Total Committed Memory was 0.57GB
 <img width="929" height="260" alt="image" src="https://github.com/user-attachments/assets/3a4695fc-2ddc-4253-9b21-11c3b4f7db70" />
 
-When taking a sample over approximately 1400 frames, the median CPU-time was 1.81ms, with a minimum of 1.34ms.
+When taking a sample over approximately 1400 frames, the median CPU-time was 1.81ms, with a minimum of 1.34ms.<br>
 <img width="282" height="102" alt="image" src="https://github.com/user-attachments/assets/64de9186-0d32-4408-8e83-7baaa4c9e33b" />
 
 ---
