@@ -27,9 +27,8 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void Die()
+    virtual protected void Die()
     {
-        GameManager.Instance.EnemyKilled();
-        Destroy(this.gameObject);
+
     }
 }

@@ -119,7 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &155912379
+--- !u!1 &199153573
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,36 +127,35 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 155912381}
-  - component: {fileID: 155912380}
+  - component: {fileID: 199153575}
+  - component: {fileID: 199153574}
   m_Layer: 0
-  m_Name: EnemySpawner
+  m_Name: RecPrisEnemyPooledFactory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &155912380
+--- !u!114 &199153574
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155912379}
+  m_GameObject: {fileID: 199153573}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3f56247486e1d2408c27b0db317974f, type: 3}
+  m_Script: {fileID: 11500000, guid: 56ebf56079a9e834cb7ded3bb08cb535, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  enemyPrefab: {fileID: -3563435215838866156, guid: f9d4fa09592987a46bd872db6ac9e118, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::RecPrisEnemyPooledFactory
   spawnCooldown: 0.3
---- !u!4 &155912381
+--- !u!4 &199153575
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155912379}
+  m_GameObject: {fileID: 199153573}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -828,6 +827,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654664792}
   m_CullTransparentMesh: 1
+--- !u!1 &1806374937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1806374939}
+  - component: {fileID: 1806374938}
+  m_Layer: 0
+  m_Name: RecPrisEnemyPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1806374938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806374937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 031797be265927349ac35db2d6bf4a11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RecPrisEnemyPool
+  maxPoolSize: 24
+  stackDefaultCapacity: 24
+  recPrisEnemyPrefab: {fileID: 7528633107971035811, guid: f9d4fa09592987a46bd872db6ac9e118, type: 3}
+--- !u!4 &1806374939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806374937}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1958111600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,5 +1135,6 @@ SceneRoots:
   - {fileID: 688457776}
   - {fileID: 1958111604}
   - {fileID: 1226260705}
-  - {fileID: 155912381}
   - {fileID: 626735327}
+  - {fileID: 199153575}
+  - {fileID: 1806374939}
