@@ -15,16 +15,16 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         this.transform.position += new Vector3(directionToPlayer.x, 0, directionToPlayer.z) * moveSpeed * Time.deltaTime;
-
-        if (health <= 0)
-        {
-            Die();
-        }
     }
 
     public void TakeHealth(int dmg)
     {
         health -= dmg;
+
+        if (health <= 0)
+        {
+            Die();
+        }
     }
 
     void Die()

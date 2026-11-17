@@ -5,14 +5,6 @@ public class GameManager : Singleton<GameManager>
     int kills;
     [SerializeField] int killsToGet;
     [SerializeField] GameObject winScreen;
-    
-    void Update()
-    {
-        if (kills >= killsToGet)
-        {
-            Win();
-        }
-    }
 
     void Win()
     {
@@ -23,5 +15,10 @@ public class GameManager : Singleton<GameManager>
     public void EnemyKilled()
     {
         kills++;
+
+        if (kills >= killsToGet)
+        {
+            Win();
+        }
     }
 }
