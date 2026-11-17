@@ -4,14 +4,11 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] protected int health;
     [SerializeField] protected float moveSpeed;
-    GameObject player;
     Vector3 directionToPlayer;
 
     public void CustomStart()
     {
-        player = GameObject.Find("Player");
-
-        directionToPlayer = player.transform.position - this.transform.position;
+        directionToPlayer = Player.Instance.transform.position - this.transform.position;
         directionToPlayer.Normalize();
     }
 
@@ -32,7 +29,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        GameObject.Find("GameManager").GetComponent<GameManager>().EnemyKilled();
+        GameManager.Instance.EnemyKilled();
         Destroy(this.gameObject);
     }
 }
